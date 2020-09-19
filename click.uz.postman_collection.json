@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "8a7cf6fb-252d-4a11-9cfe-f4f0ca374cc8",
+		"name": "click.uz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create News",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"News\",\r\n    \"description\": \"New GiweAway\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/news",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update News",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"News\",\r\n    \"description\": \"Clickda barchasi oson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/news/5f65f7ed1ec7c7754de22ada",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news",
+						"5f65f7ed1ec7c7754de22ada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news/5f643de00efde03518430ee7",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news",
+						"5f643de00efde03518430ee7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete News",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news/5f65e9bff2279a5ad55c0684",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news",
+						"5f65e9bff2279a5ad55c0684"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/stats",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

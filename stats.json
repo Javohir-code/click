@@ -1,0 +1,11 @@
+{
+  "GET /news/ 200": 2,
+  "avgTime": "138 ms",
+  "totalRes": 9,
+  "GET /news/:id 200": 2,
+  "GET /news/:id 404": 1,
+  "POST /news/ 201": 1,
+  "PUT /news/:id 201": 1,
+  "DELETE /news/:id 200": 1,
+  "GET /stats/ 200": 1
+}
